@@ -29,4 +29,10 @@ const data = [
     name: 'Cat',
     difficulty: 2,
   },
+  {
+    id: 6,
+    photo: '',
+    name: 'Cat',
+    difficulty: 2,
+  },
 ];
