@@ -1,7 +1,7 @@
 import { Container } from './Presentation.style';
 
 const Presentation = () => {
-  return <div>presentation</div>;
+  return <Container>presentation</Container>;
 };
 
 export default Presentation;
