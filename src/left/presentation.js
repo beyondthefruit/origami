@@ -1,7 +1,7 @@
-import { Container } from './Presentation.style';
+import { PresentationContainer } from './Presentation.style';
 
 const Presentation = () => {
-  return <Container>presentation</Container>;
+  return <PresentationContainer>presentation</PresentationContainer>;
 };
 
 export default Presentation;

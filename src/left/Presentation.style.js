@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const PresentationContainer = styled.div`
   width: 50%;
-  height: 90vh;
-  background-color: beige;
+  height: 100vh;
+  background-color: #777369;
   color: black;
 `;
