@@ -10,6 +10,7 @@ body {
 
 section{
  display: flex;
+ flex-wrap: wrap;
 }
 
 `;

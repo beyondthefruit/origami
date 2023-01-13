@@ -1,5 +1,7 @@
+import { OrigamiContainer } from './Origami.style';
+
 const Origami = () => {
-  return <div>Origami</div>;
+  return <OrigamiContainer>Origami</OrigamiContainer>;
 };
 
 export default Origami;
