@@ -1,18 +1,26 @@
 import origamiLogo from '../imgs/origamiLogo.png';
 import {
   PresentationContainer,
-  WebsiteBanner,
-  WebsiteLogo,
-  WebsiteTitle,
+  Banner,
+  Intro,
+  Logo,
+  IntroTitle,
+  Title,
+  IntroTitleSpan,
 } from './Presentation.style';
 
 const Presentation = () => {
   return (
     <PresentationContainer>
-      <WebsiteBanner>
-        <WebsiteTitle>origami</WebsiteTitle>
-        <WebsiteLogo src={origamiLogo} alt='origami logo'></WebsiteLogo>
-      </WebsiteBanner>
+      <Banner>
+        <Title>origami</Title>
+        <Logo src={origamiLogo} alt='origami logo'></Logo>
+      </Banner>
+      <Intro>
+        <IntroTitle>
+          Discover my <IntroTitleSpan>paper</IntroTitleSpan> creations
+        </IntroTitle>
+      </Intro>
     </PresentationContainer>
   );
 };
