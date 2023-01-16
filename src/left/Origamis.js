@@ -4,16 +4,29 @@ import {
   OrigamiListItem,
   OrigamisContainer,
 } from './Origamis.style';
+import { GiPaperCrane } from 'react-icons/gi';
 
 const Origamis = () => {
   return (
     <OrigamisContainer>
       <ExploreIntro>Explore my designs</ExploreIntro>
       <OrigamiList>
-        <OrigamiListItem>Bird baby bird</OrigamiListItem>
-        <OrigamiListItem>Bird baby bird</OrigamiListItem>
-        <OrigamiListItem>Bird baby bird</OrigamiListItem>
-        <OrigamiListItem>Bird baby bird</OrigamiListItem>
+        <OrigamiListItem>
+          <GiPaperCrane />
+          Bird baby bird
+        </OrigamiListItem>
+        <OrigamiListItem>
+          <GiPaperCrane />
+          Bird baby bird
+        </OrigamiListItem>
+        <OrigamiListItem>
+          <GiPaperCrane />
+          Bird baby bird
+        </OrigamiListItem>
+        <OrigamiListItem>
+          <GiPaperCrane />
+          Bird baby bird
+        </OrigamiListItem>
       </OrigamiList>
     </OrigamisContainer>
   );
