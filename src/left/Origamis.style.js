@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 
+export const BothContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+`;
 export const OrigamisContainer = styled.div`
   width: 50%;
   height: 100vh;
-  background-color: #6aafdc;
+  background-color: #f3f5f7;
 `;
 
 export const ExploreIntro = styled.div`
@@ -15,7 +19,7 @@ export const ExploreIntro = styled.div`
 
 export const OrigamiList = styled.div`
   height: 70vh;
-  background-color: grey;
+  border: grey ridge 1px;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -23,7 +27,20 @@ export const OrigamiList = styled.div`
   flex-direction: column;
 `;
 
-export const OrigamiListItem = styled.div`
-  border: red ridge 2px;
+export const OrigamiListItem = styled.a`
+  border: red ridge 1px;
+  font-size: 1.4rem;
   margin: 0.5rem;
+  transition: padding-left 0.5s background-color 0.5s;
+  cursor: pointer;
+
+  &:active {
+    background-color: aliceblue;
+  }
+
+  &:hover {
+    padding-left: 1.5rem;
+    background-color: #b5bbb4;
+    /* background-color: #86b2c1; */
+  }
 `;
