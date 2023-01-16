@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const BothContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+`;
 export const OrigamisContainer = styled.div`
   width: 50%;
   height: 100vh;
@@ -29,6 +33,10 @@ export const OrigamiListItem = styled.a`
   margin: 0.5rem;
   transition: padding-left 0.5s background-color 0.5s;
   cursor: pointer;
+
+  &:active {
+    background-color: aliceblue;
+  }
 
   &:hover {
     padding-left: 1.5rem;
