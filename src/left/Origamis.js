@@ -9,18 +9,16 @@ import {
 import Origami from '../right/Origami';
 import { GiPaperCrane } from 'react-icons/gi';
 
-const Origamis = ({ paperData, setPaperData }) => {
-  console.log(paperData);
+const Origamis = ({ paperData, setPaperData, getId }) => {
   return (
     // <BothContainer>
     <OrigamisContainer>
       <ExploreIntro>Explore my designs</ExploreIntro>
       <OrigamiList>
         {paperData.map((origami) => {
-          const { id, photo, name, icon } = origami;
-          console.log(origami);
+          const { id, name, icon } = origami;
           return (
-            <OrigamiListItem key={id}>
+            <OrigamiListItem key={id} onClick={() => getId(origami.id)}>
               {icon} {name}
             </OrigamiListItem>
           );
