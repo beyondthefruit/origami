@@ -7,23 +7,32 @@ import Origamis from './left/Origamis';
 import Origami from './right/Origami';
 import data from './data';
 
+const image = data[0].photo;
+const images = data.map((e) => e.photo);
+
 function App() {
   const [paperData, setPaperData] = useState(data);
-  const [showImg, setShowImg] = useState(data);
+  const [showImg, setShowImg] = useState(image);
+  console.log(showImg);
 
-  const getId = (id) => {
-    console.log(id);
-    // let banane = showImg.filter((bloc) => bloc.id === id);
-    // console.log(banane);
-    // console.log(banane.photo);
-    let banane = showImg.filter((bloc) => {
-      if (bloc.id === id) {
-        console.log(bloc);
-      }
-    });
-    setShowImg(banane);
-    // console.log(banane);
-    // console.log(banane.photo);
+  // const getId = (id) => {
+  //   console.log(id);
+  //   // let banane = showImg.filter((bloc) => bloc.id === id);
+  //   // console.log(banane);
+  //   // console.log(banane.photo);
+  //   let banane = showImg.filter((bloc) => {
+  //     if (bloc.id === id) {
+  //       console.log(bloc);
+  //     }
+  //   });
+  //   setShowImg(banane);
+  //   // console.log(banane);
+  //   // console.log(banane.photo);
+  // };
+
+  const filterImg = (img) => {
+    const displayImg = images.filter((e) => e === img);
+    setShowImg(displayImg);
   };
 
   return (
@@ -35,9 +44,13 @@ function App() {
       <Origamis
         paperData={paperData}
         setPaperData={setPaperData}
-        getId={getId}
+        filterImg={filterImg}
       />
-      <Origami getId={getId} showImg={showImg} setShowImg={setShowImg} />
+      <Origami
+        showImg={showImg}
+        setShowImg={setShowImg}
+        filterImg={filterImg}
+      />
     </section>
   );
 }

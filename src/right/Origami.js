@@ -1,10 +1,10 @@
 import { OrigamiContainer, OrigamiImg } from './Origami.style';
 
-const Origami = ({ getId, showImg, setShowImg }) => {
+const Origami = ({ showImg, setShowImg }) => {
   const displayPhoto = () => {};
   return (
     <OrigamiContainer>
-      <OrigamiImg src={showImg.photo}></OrigamiImg>;
+      <OrigamiImg src={showImg}></OrigamiImg>;
     </OrigamiContainer>
   );
 };
