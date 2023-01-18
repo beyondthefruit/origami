@@ -19,7 +19,7 @@ export const ExploreIntro = styled.div`
 
 export const OrigamiList = styled.div`
   height: 70vh;
-  border: grey ridge 1px;
+  /* border: grey ridge 1px; */
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -28,9 +28,13 @@ export const OrigamiList = styled.div`
 `;
 
 export const OrigamiListItem = styled.a`
-  border: red ridge 1px;
-  font-size: 1.4rem;
+  /* border: red ridge 1px; */
+  height: 2.5rem;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  font-weight: 500;
   margin: 0.5rem;
+  padding: 0.4rem 0 0 1.5rem;
   transition: padding-left 0.5s background-color 0.5s;
   cursor: pointer;
 
@@ -39,7 +43,7 @@ export const OrigamiListItem = styled.a`
   }
 
   &:hover {
-    padding-left: 1.5rem;
+    padding-left: 3rem;
     background-color: #b5bbb4;
     /* background-color: #86b2c1; */
   }
