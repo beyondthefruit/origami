@@ -27,6 +27,8 @@ export const Logo = styled.img`
 `;
 
 export const Intro = styled.div`
+  display: flex;
+  justify-content: space-between;
   height: 70vh;
   display: flex;
   align-items: center;
@@ -34,7 +36,7 @@ export const Intro = styled.div`
 
 export const IntroTitle = styled.h1`
   font-size: 3rem;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 `;
 
 export const IntroTitleSpan = styled.span`

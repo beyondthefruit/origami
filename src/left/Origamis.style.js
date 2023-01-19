@@ -45,6 +45,7 @@ export const OrigamiListItem = styled.a`
   &:hover {
     padding-left: 3rem;
     background-color: #b5bbb4;
+    font-size: 1.6rem;
     /* background-color: #86b2c1; */
   }
 `;
