@@ -10,6 +10,22 @@ import Origami from '../right/Origami';
 import { GiPaperCrane } from 'react-icons/gi';
 
 const Origamis = ({ filterImg, paperData, setPaperData, getId }) => {
+  const [activeEl, setActiveEl] = useState();
+  const [index, setIndex] = useState(0);
+  let current = 'current';
+  const activeList = (e) => {
+    // if (index === e) {
+    //   // current = 'current';
+    //   console.log('hello');
+    // }
+    // console.log(e.currentTarget);
+    // console.log(e.target);
+    // return e.currentTarget.classList('current');
+    // e.currentTarget
+    // setActiveEl(e.currentTarget);
+    // console.log(activeEl);
+  };
+
   return (
     // <BothContainer>
     <OrigamisContainer>
@@ -21,7 +37,14 @@ const Origamis = ({ filterImg, paperData, setPaperData, getId }) => {
           return (
             // <OrigamiListItem key={id} onClick={() => getId(origami.id)}>
             //   {icon} {name}
-            <OrigamiListItem key={id} onClick={() => filterImg(photo)}>
+            <OrigamiListItem
+              key={id}
+              // onClick={() => {
+              //   filterImg(photo);
+              //   activeList();
+              // }}
+              onClick={activeList}
+            >
               {icon} {name}
             </OrigamiListItem>
           );

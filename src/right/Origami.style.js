@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../devices';
 
 export const OrigamiContainer = styled.div`
   width: 50%;
@@ -10,11 +11,20 @@ export const OrigamiContainer = styled.div`
 `;
 
 export const OrigamiImg = styled.img`
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   border: black ridge 2px;
   transition: 1s;
   &:hover {
     scale: 1.1;
+  }
+
+  @media ${device.mobileM} {
+    width: 200px;
+    height: 200px;
+  }
+  @media ${device.laptop} {
+    width: 400px;
+    height: 400px;
   }
 `;
