@@ -11,7 +11,7 @@ const OrigamiSvg = () => {
         id='bird'
         // width='350'
         // height='350'
-        viewBox='0 0 445 300'
+        viewBox='0 0 450 300'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
       >

@@ -2,13 +2,16 @@ import styled from 'styled-components';
 import { device } from '../devices';
 
 export const FlyingOrigamiContainer = styled.div`
-  width: 50%;
+  width: 58%;
   height: 100vh;
   background-color: #f3f5f7;
   color: black;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media ${device.mobileL} {
+    width: 50%;
+  }
 `;
 
 export const FlyingOrigami = styled.div`
