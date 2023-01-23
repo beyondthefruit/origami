@@ -11,8 +11,8 @@ export const OrigamiContainer = styled.div`
 `;
 
 export const OrigamiImg = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border: black ridge 2px;
   transition: 1s;
   &:hover {
@@ -20,8 +20,8 @@ export const OrigamiImg = styled.img`
   }
 
   @media ${device.mobileM} {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
   @media ${device.laptop} {
     width: 400px;

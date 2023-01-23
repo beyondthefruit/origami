@@ -39,11 +39,11 @@ const Origamis = ({ filterImg, paperData, setPaperData, getId }) => {
             //   {icon} {name}
             <OrigamiListItem
               key={id}
-              // onClick={() => {
-              //   filterImg(photo);
-              //   activeList();
-              // }}
-              onClick={activeList}
+              onClick={() => {
+                filterImg(photo);
+                // activeList();
+              }}
+              // onClick={activeList}
             >
               {icon} {name}
             </OrigamiListItem>
