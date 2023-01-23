@@ -6,12 +6,16 @@ export const FlyingOrigamiContainer = styled.div`
   height: 100vh;
   background-color: #f3f5f7;
   color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   @media ${device.mobileL} {
     width: 50%;
   }
+`;
+export const FlyingOrigamiSection = styled.div`
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const FlyingOrigami = styled.div`
@@ -39,4 +43,12 @@ export const FlyingOrigami = styled.div`
 export const OrigamiSvgEl = styled.div`
   /* width: 20px;
   height: 20px; */
+`;
+export const OrigamiBtnSection = styled.div`
+  width: auto;
+  height: 5rem;
+`;
+export const OrigamiColorBtns = styled.button`
+  width: 4rem;
+  height: 1rem;
 `;
