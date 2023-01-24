@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 import { device } from '../devices';
 
-export const BothContainer = styled.div`
-  width: 100%;
-  height: 100vh;
-`;
 export const OrigamisContainer = styled.div`
   width: 42%;
   height: 100vh;
@@ -19,6 +15,7 @@ export const ExploreIntro = styled.div`
   height: 5rem;
   font-size: 0.9rem;
   padding: 1rem 0 0 1rem;
+  font-style: oblique 5deg;
   @media ${device.mobileM} {
     font-size: 1rem;
   }
@@ -32,7 +29,7 @@ export const ExploreIntro = styled.div`
 
 export const OrigamiList = styled.div`
   height: 75vh;
-  /* border: grey ridge 1px; */
+
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -42,19 +39,15 @@ export const OrigamiList = styled.div`
 `;
 
 export const OrigamiListItem = styled.a`
-  /* border: red ridge 1px; */
   height: 2rem;
-  border-radius: 4px;
-  font-size: 1.4rem;
+  border-radius: 6px;
+  font-size: 1.3rem;
   font-weight: 500;
   margin: 0.2rem;
   padding: 0 0 0 0.5rem;
-  transition: padding-left 0.5s background-color 0.5s;
+  transition: padding-left 0.8s background-color 0.8s;
   cursor: pointer;
 
-  /* & {
-    background-color: aliceblue;
-  } */
   @media ${device.mobileM} {
     font-size: 1.5rem;
     margin: 0.2rem;
@@ -81,18 +74,15 @@ export const OrigamiListItem = styled.a`
     height: 4rem;
     padding-top: 0.4rem;
   }
-  /* 
-  &:visited {
-    background-color: black;
-  } */
+
   &.actived {
     background-color: #d1e9f0;
   }
 
   &:hover {
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     background-color: #b5bbb4;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     background-color: #86b2c1;
 
     @media ${device.mobileM} {
@@ -109,6 +99,7 @@ export const OrigamiListItem = styled.a`
     }
     @media ${device.laptopL} {
       font-size: 2.4rem;
+      padding-left: 4rem;
     }
   }
 `;

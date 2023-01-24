@@ -14,15 +14,16 @@ export const FlyingOrigamiContainer = styled.div`
 export const FlyingOrigamiSection = styled.div`
   height: 65vh;
   display: flex;
-  /* align-items: center; */
+
   align-items: flex-end;
   justify-content: center;
-  /* justify-content: flex-end; */
+
   @media ${device.tablet} {
     height: 70vh;
   }
   @media ${device.laptop} {
-    height: 75vh;
+    /* height: 70vh; */
+    align-items: center;
   }
 `;
 
@@ -31,27 +32,16 @@ export const FlyingOrigami = styled.div`
   height: auto;
   margin-left: auto;
   margin-right: auto;
-
   background-color: #f3f5f7;
   color: black;
   flex-grow: 1;
   /* without flex-grow, the svg is disapearing */
 
-  @media ${device.mobileM} {
+  /* @media ${device.mobileM} {
     margin-top: 2rem;
-  }
-  @media ${device.laptop} {
-    /* margin-top: 10rem; */
-  }
-  @media ${device.laptopL} {
-    /* margin-top: 4rem; */
-  }
+  } */
 `;
 
-export const OrigamiSvgEl = styled.div`
-  /* width: 20px;
-  height: 20px; */
-`;
 export const OrigamiColorSection = styled.div`
   width: auto;
   height: 30vh;
@@ -59,15 +49,13 @@ export const OrigamiColorSection = styled.div`
   @media ${device.tablet} {
     height: 25vh;
   }
-  /* @media ${device.laptop} {
-    height:30vh;
-  } */
 `;
 export const OrigamiColorTitle = styled.p`
-  width: 10rem;
+  width: 100%;
   height: auto;
   font-size: 1rem;
-  margin: 0.2rem auto;
+  margin: 0.2rem 0;
+  text-align: center;
 
   @media ${device.tablet} {
     width: 100%;
@@ -84,6 +72,7 @@ export const OrigamiBtnSection = styled.div`
   width: auto;
   height: auto;
   display: flex;
+
   flex-direction: column;
   padding: 0.2rem 0.5rem;
 
@@ -94,19 +83,36 @@ export const OrigamiBtnSection = styled.div`
   }
 `;
 export const OrigamiColorBtns = styled.button`
-  width: 10rem;
+  width: 9rem;
   height: 1.5rem;
-  margin: 0.3rem auto;
+  margin: 0.25rem auto;
+  border-radius: 3px;
   border: none;
+  box-shadow: 1px 2px 2px 1px #7b8d8e;
+  transition: 0.3s linear;
+  @media ${device.mobileM} {
+    width: 10rem;
+    height: 1.5rem;
+    margin: 0.4rem auto;
+  }
   @media ${device.tablet} {
     width: 8rem;
     height: 1.5rem;
+
     margin: 0.3rem;
   }
   @media ${device.laptop} {
     width: 14rem;
     height: 1.5rem;
-    margin: 0.3rem;
+    margin: 0.4rem 0.5rem;
   }
-  /* background-color: ${(props) => props.theme.origamiColor}; */
+  @media ${device.laptopL} {
+    width: 14rem;
+    height: 1.5rem;
+    margin: 0.6rem;
+  }
+  &:hover {
+    scale: 1.05;
+    letter-spacing: 1px;
+  }
 `;

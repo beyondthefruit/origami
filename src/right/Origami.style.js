@@ -16,8 +16,9 @@ export const OrigamiContainer = styled.div`
 export const OrigamiImg = styled.img`
   width: 170px;
   height: 170px;
-  border: black ridge 2px;
-  transition: 1s;
+  border: #c1c2c2 ridge 2.5px;
+  transition: 0.6s linear;
+  box-shadow: 2px 2px 6px 2px #a2a4a4;
 
   @media ${device.mobileM} {
     width: 200px;

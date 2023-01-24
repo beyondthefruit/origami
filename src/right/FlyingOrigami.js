@@ -13,12 +13,12 @@ import { useState } from 'react';
 const FlyingOrigami = () => {
   const [origamiColor, setOrigamiColor] = useState('#E6E8E6');
   const [origamiStrokeColor, setOrigamiStrokeColor] = useState('#808080');
+  const [origamiBtnShadow, setOrigamiBtnShadow] = useState('#808080');
 
   const updateColor = (c, s) => {
     setOrigamiColor(c);
     setOrigamiStrokeColor(s);
   };
-  // const animation =
 
   return (
     <FlyingOrigamiContainer>
@@ -36,10 +36,13 @@ const FlyingOrigami = () => {
             return (
               <OrigamiColorBtns
                 key={colorId}
-                style={{ backgroundColor: ref, color: stroke }}
+                style={{
+                  backgroundColor: ref,
+                  color: stroke,
+                }}
                 onClick={() => updateColor(ref, stroke)}
               >
-                {colorName} -
+                {colorName}
               </OrigamiColorBtns>
             );
           })}
