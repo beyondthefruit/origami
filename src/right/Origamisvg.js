@@ -3,11 +3,10 @@ import { OrigamiSvgEl } from './FlyingOrigami.style';
 import color from '../birdColor';
 import Origami from './Origami';
 
-const OrigamiSvg = () => {
+const OrigamiSvg = ({ origamiColor, origamiStrokeColor }) => {
   // const svgbird = document.getElementById('bird');
   // svgbird.setAttribute('viewbox', '0 0 100 100');
-  const birdColor = '#E6E8E6';
-  const birdStrokeColor = '#808080';
+
   return (
     <FlyingOrigami>
       <svg
@@ -16,8 +15,8 @@ const OrigamiSvg = () => {
         // height='350'
         viewBox='0 0 450 350'
         xmlns='http://www.w3.org/2000/svg'
-        fill={birdColor}
-        stroke={birdStrokeColor}
+        fill={origamiColor}
+        stroke={origamiStrokeColor}
       >
         <g id='head'>
           <path d='M288 8L327 33.5L295.767 39.068L288 8Z' strokeWidth='1.5534'>

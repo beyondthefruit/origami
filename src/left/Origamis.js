@@ -25,6 +25,10 @@ const Origamis = ({ filterImg, paperData, setPaperData, getId }) => {
     // setActiveEl(e.currentTarget);
     // console.log(activeEl);
   };
+  const activePaper = (e) => {
+    e.currentTarget.classList.add('actived');
+    console.log('hi');
+  };
 
   return (
     // <BothContainer>
@@ -39,11 +43,11 @@ const Origamis = ({ filterImg, paperData, setPaperData, getId }) => {
             //   {icon} {name}
             <OrigamiListItem
               key={id}
-              onClick={() => {
-                filterImg(photo);
-                // activeList();
-              }}
-              // onClick={activeList}
+              // onClick={() => {
+              //   filterImg(photo);
+
+              // }}
+              onClick={activePaper}
             >
               {icon} {name}
             </OrigamiListItem>

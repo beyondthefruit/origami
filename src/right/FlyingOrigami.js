@@ -2,23 +2,49 @@ import {
   FlyingOrigamiContainer,
   FlyingOrigamiSection,
   OrigamiBtnSection,
+  OrigamiColorTitle,
   OrigamiColorBtns,
+  OrigamiColorSection,
 } from './FlyingOrigami.style';
 import OrigamiSvg from './Origamisvg';
 import colors from '../birdColor';
+import { useState } from 'react';
 
 const FlyingOrigami = () => {
+  const [origamiColor, setOrigamiColor] = useState('#E6E8E6');
+  const [origamiStrokeColor, setOrigamiStrokeColor] = useState('#808080');
+
+  const updateColor = (c, s) => {
+    setOrigamiColor(c);
+    setOrigamiStrokeColor(s);
+  };
+  // const animation =
+
   return (
     <FlyingOrigamiContainer>
       <FlyingOrigamiSection>
-        <OrigamiSvg />
+        <OrigamiSvg
+          origamiColor={origamiColor}
+          origamiStrokeColor={origamiStrokeColor}
+        />
       </FlyingOrigamiSection>
-      <OrigamiBtnSection>
-        {colors.map((color) => {
-          const { colorId, colorName, ref } = color;
-          return <OrigamiColorBtns key={colorId}>{colorName}</OrigamiColorBtns>;
-        })}
-      </OrigamiBtnSection>
+      <OrigamiColorSection>
+        <OrigamiColorTitle>Choose your paper</OrigamiColorTitle>
+        <OrigamiBtnSection>
+          {colors.map((color) => {
+            const { colorId, colorName, ref, stroke } = color;
+            return (
+              <OrigamiColorBtns
+                key={colorId}
+                style={{ backgroundColor: ref, color: stroke }}
+                onClick={() => updateColor(ref, stroke)}
+              >
+                {colorName} -
+              </OrigamiColorBtns>
+            );
+          })}
+        </OrigamiBtnSection>
+      </OrigamiColorSection>
     </FlyingOrigamiContainer>
   );
 };

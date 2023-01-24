@@ -85,6 +85,9 @@ export const OrigamiListItem = styled.a`
   &:visited {
     background-color: black;
   } */
+  &.actived {
+    background-color: red;
+  }
 
   &:hover {
     padding-left: 1.5rem;
