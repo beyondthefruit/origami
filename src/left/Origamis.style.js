@@ -86,7 +86,7 @@ export const OrigamiListItem = styled.a`
     background-color: black;
   } */
   &.actived {
-    background-color: red;
+    background-color: #d1e9f0;
   }
 
   &:hover {
