@@ -13,7 +13,7 @@ const images = data.map((e) => e.photo);
 function App() {
   const [paperData, setPaperData] = useState(data);
   const [showImg, setShowImg] = useState(image);
-  console.log(showImg);
+  // console.log(showImg);
 
   const filterImg = (img) => {
     const displayImg = images.filter((e) => e === img);

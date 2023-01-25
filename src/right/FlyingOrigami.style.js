@@ -74,8 +74,13 @@ export const OrigamiBtnSection = styled.div`
   display: flex;
 
   flex-direction: column;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 0.5rem 0.5rem;
 
+  @media ${device.mobileL} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   @media ${device.tablet} {
     flex-direction: row;
     flex-wrap: wrap;
@@ -90,14 +95,19 @@ export const OrigamiColorBtns = styled.button`
   border: none;
   box-shadow: 1px 2px 2px 1px #7b8d8e;
   transition: 0.3s linear;
+
   @media ${device.mobileM} {
-    width: 10rem;
+    width: 7.5rem;
+    height: 1.4rem;
+    margin: 0.3rem auto;
+  }
+  @media ${device.mobileL} {
+    width: 7.5rem;
     height: 1.5rem;
     margin: 0.4rem auto;
   }
   @media ${device.tablet} {
     width: 8rem;
-    height: 1.5rem;
 
     margin: 0.3rem;
   }

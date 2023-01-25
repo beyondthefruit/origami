@@ -34,6 +34,7 @@ const FlyingOrigami = () => {
             const { colorId, colorName, ref, stroke } = color;
             return (
               <OrigamiColorBtns
+                aria-label='color'
                 key={colorId}
                 style={{
                   backgroundColor: ref,
