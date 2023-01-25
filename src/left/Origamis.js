@@ -1,20 +1,16 @@
 import { useState } from 'react';
 import {
-  BothContainer,
   ExploreIntro,
   OrigamiList,
   OrigamiListItem,
   OrigamisContainer,
 } from './Origamis.style';
-import Origami from '../right/Origami';
 import { GiPaperCrane } from 'react-icons/gi';
 
-const Origamis = ({ filterImg, paperData, setPaperData, getId }) => {
-  // const [index, setIndex] = useState(0);
+const Origamis = ({ filterImg, paperData }) => {
   const [activeId, setActiveId] = useState(1);
 
   return (
-    // <BothContainer>
     <OrigamisContainer>
       <ExploreIntro>Explore my designs</ExploreIntro>
       <OrigamiList>

@@ -1,12 +1,6 @@
-import { FlyingOrigami, OrigamiBtnSection } from './FlyingOrigami.style';
-import { OrigamiSvgEl } from './FlyingOrigami.style';
-import color from '../birdColor';
-import Origami from './Origami';
+import { FlyingOrigami } from './FlyingOrigami.style';
 
 const OrigamiSvg = ({ origamiColor, origamiStrokeColor }) => {
-  // const svgbird = document.getElementById('bird');
-  // svgbird.setAttribute('viewbox', '0 0 100 100');
-
   return (
     <FlyingOrigami>
       <svg

@@ -13,7 +13,6 @@ import { useState } from 'react';
 const FlyingOrigami = () => {
   const [origamiColor, setOrigamiColor] = useState('#E6E8E6');
   const [origamiStrokeColor, setOrigamiStrokeColor] = useState('#808080');
-  const [origamiBtnShadow, setOrigamiBtnShadow] = useState('#808080');
 
   const updateColor = (c, s) => {
     setOrigamiColor(c);

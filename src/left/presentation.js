@@ -1,4 +1,5 @@
 import origamiLogo from '../imgs/origamiLogo.png';
+import origamil from '../imgs/origamil.png';
 import {
   PresentationContainer,
   Banner,
@@ -14,7 +15,8 @@ const Presentation = () => {
     <PresentationContainer>
       <Banner>
         <Title>origami</Title>
-        <Logo src={origamiLogo} alt='origami logo'></Logo>
+        {/* <Logo src={origamiLogo} alt='origami logo'></Logo> */}
+        <Logo src={origamil} alt='origami logo'></Logo>
       </Banner>
       <Intro>
         <IntroTitle>

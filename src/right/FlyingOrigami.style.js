@@ -56,7 +56,7 @@ export const OrigamiColorTitle = styled.p`
   font-size: 1rem;
   margin: 0.2rem 0;
   text-align: center;
-
+  font-style: oblique;
   @media ${device.tablet} {
     width: 100%;
     height: 1.5rem;

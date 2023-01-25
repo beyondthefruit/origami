@@ -23,19 +23,25 @@ export const Title = styled.div`
   font-weight: 600;
   width: auto;
   margin: 1rem 0 0 0.5rem;
+  @media ${device.mobileM} {
+    letter-spacing: 1px;
+  }
   @media ${device.tablet} {
     font-size: 1.7rem;
     margin: 1rem 0 0 1.5rem;
   }
   @media ${device.laptop} {
     font-size: 2.3rem;
+    letter-spacing: 2px;
   }
 `;
 export const Logo = styled.img`
   width: 32px;
   height: 32px;
   margin: 0.6rem 0.5rem 0 0;
-  transition: 0.5s linear;
+  transition: 0.4s linear;
+  color: black;
+  fill: black;
   @media ${device.tablet} {
     width: 48px;
     height: 48px;
@@ -46,7 +52,7 @@ export const Logo = styled.img`
     height: 56px;
   }
   &:hover {
-    transform: rotate(25deg);
+    transform: rotate(360deg);
   }
 `;
 
@@ -64,7 +70,7 @@ export const Intro = styled.div`
 export const IntroTitle = styled.h1`
   font-size: 1.6rem;
   padding-left: 0.6rem;
-  /* font-style: oblique 5deg; */
+  font-style: oblique 3deg;
 
   @media ${device.mobileM} {
     font-size: 1.8rem;
