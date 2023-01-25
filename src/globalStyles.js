@@ -5,8 +5,9 @@ body {
  margin: 0;
  padding: 0;
  background: darkgray;
- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-family: 'Space Grotesk', sans-serif, 'Dancing Script', cursive, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+/* 'Marck Script', cursive, 'Courgette', cursive, */
 
 section{
  display: flex;
