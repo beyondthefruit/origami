@@ -12,12 +12,15 @@ export const FlyingOrigamiContainer = styled.div`
   }
 `;
 export const FlyingOrigamiSection = styled.div`
-  height: 65vh;
+  height: 50vh;
   display: flex;
 
   align-items: flex-end;
   justify-content: center;
 
+  @media ${device.mobileM} {
+    height: 55vh;
+  }
   @media ${device.tablet} {
     height: 70vh;
   }
@@ -68,27 +71,52 @@ export const OrigamiColorTitle = styled.p`
     font-size: 1.2rem;
   }
 `;
+// export const OrigamiBtnSection = styled.div`
+//   width: auto;
+//   height: auto;
+//   display: flex;
+
+//   /* flex-direction: column; */
+//   padding: 0.2rem 0.5rem 0.5rem;
+
+//   @media ${device.mobileL} {
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+//   }
+//   @media ${device.tablet} {
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+//   }
+// `;
 export const OrigamiBtnSection = styled.div`
   width: auto;
-  height: auto;
+  height: 15vh;
   display: flex;
 
   flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
   padding: 0.2rem 0.5rem 0.5rem;
 
+  @media ${device.mobileM} {
+    height: 13vh;
+  }
   @media ${device.mobileL} {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   @media ${device.tablet} {
+    height: auto;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 `;
 export const OrigamiColorBtns = styled.button`
-  width: 9rem;
+  width: 5rem;
   height: 1.5rem;
   margin: 0.25rem auto;
   border-radius: 3px;
@@ -97,12 +125,12 @@ export const OrigamiColorBtns = styled.button`
   transition: 0.3s linear;
 
   @media ${device.mobileM} {
-    width: 7.5rem;
+    width: 5rem;
     height: 1.4rem;
     margin: 0.3rem auto;
   }
   @media ${device.mobileL} {
-    width: 7.5rem;
+    width: 5rem;
     height: 1.5rem;
     margin: 0.4rem auto;
   }

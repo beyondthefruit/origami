@@ -1,6 +1,6 @@
 import { OrigamiContainer, OrigamiImg } from './Origami.style';
 
-const Origami = ({ showImg, setShowImg }) => {
+const Origami = ({ showImg, setShowImg, isMobile }) => {
   return (
     <OrigamiContainer>
       <OrigamiImg src={showImg}></OrigamiImg>

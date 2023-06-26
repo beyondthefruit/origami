@@ -45,6 +45,7 @@ function App() {
         showImg={showImg}
         setShowImg={setShowImg}
         filterImg={filterImg}
+        isMobile={isMobile}
       />
     </section>
   );

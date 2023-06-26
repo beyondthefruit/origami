@@ -57,14 +57,18 @@ export const Logo = styled.img`
 export const Intro = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 70vh;
-  line-height: 2.2rem;
-  align-items: center;
+  height: 4vh;
+  /* line-height: 2.2rem; */
+  align-items: flex-end;
   @media ${device.tablet} {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+    line-height: 2.2rem;
+    align-items: center;
     line-height: 4rem;
   }
 `;
-
 export const IntroTitle = styled.h1`
   font-size: 1.6rem;
   padding-left: 0.6rem;
