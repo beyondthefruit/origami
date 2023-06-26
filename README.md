@@ -5,7 +5,7 @@
 ➡️ ➡️ [GO TO WEBSITE PROJECT]() ⬅️ ⬅️
 
 I love crafting, journaling, making origamis, with this project I can combine both my passion of coding and practice my coding skills and share origamis pictures.
-This project was also a way to play with svg animation.
+This project was also a way to play with svg animation for the first time.
 
 ### 👟 Steps
 

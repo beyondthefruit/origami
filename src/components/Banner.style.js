@@ -1,17 +1,15 @@
 import styled from 'styled-components';
 import { device } from '../devices';
 
-export const PresentationContainer = styled.div`
-  width: 42%;
-  height: 100vh;
+export const BannerSection = styled.div`
+  height: 20vh;
   background-color: #777369;
   color: black;
-  @media ${device.mobileL} {
-    width: 50%;
+  @media ${device.tablet} {
+    height: 100vh;
   }
 `;
-
-export const Banner = styled.div`
+export const BannerTitle = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;

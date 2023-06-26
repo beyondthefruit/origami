@@ -4,7 +4,7 @@ import {
   OrigamiList,
   OrigamiListItem,
   OrigamisContainer,
-} from './Origamis.style';
+} from './OrigamisList.style';
 import { GiPaperCrane } from 'react-icons/gi';
 
 const Origamis = ({ filterImg, paperData }) => {

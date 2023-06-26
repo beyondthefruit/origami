@@ -1,30 +1,31 @@
 import origamiLogo from '../imgs/origamiLogo.png';
 import origamil from '../imgs/origamil.png';
+import devices from '../devices';
 import {
-  PresentationContainer,
-  Banner,
+  BannerTitle,
   Intro,
   Logo,
   IntroTitle,
   Title,
   IntroTitleSpan,
-} from './Presentation.style';
+  BannerSection,
+} from './Banner.style';
 
-const Presentation = () => {
+const Banner = () => {
   return (
-    <PresentationContainer>
-      <Banner>
+    <BannerSection>
+      <BannerTitle>
         <Title>origami</Title>
         {/* <Logo src={origamiLogo} alt='origami logo'></Logo> */}
         <Logo src={origamil} alt='origami logo'></Logo>
-      </Banner>
+      </BannerTitle>
       <Intro>
         <IntroTitle>
           Discover my <IntroTitleSpan>paper</IntroTitleSpan> creations
         </IntroTitle>
       </Intro>
-    </PresentationContainer>
+    </BannerSection>
   );
 };
 
-export default Presentation;
+export default Banner;

@@ -9,8 +9,9 @@ import {
 import OrigamiSvg from './Origamisvg';
 import colors from '../birdColor';
 import { useState } from 'react';
+import Banner from './Banner';
 
-const FlyingOrigami = () => {
+const FlyingOrigami = ({ isMobile }) => {
   const [origamiColor, setOrigamiColor] = useState('#E6E8E6');
   const [origamiStrokeColor, setOrigamiStrokeColor] = useState('#808080');
 
@@ -21,6 +22,7 @@ const FlyingOrigami = () => {
 
   return (
     <FlyingOrigamiContainer>
+      {isMobile && <Banner />}
       <FlyingOrigamiSection>
         <OrigamiSvg
           origamiColor={origamiColor}
