@@ -2,17 +2,20 @@ import styled from 'styled-components';
 import { device } from '../devices';
 
 export const OrigamisContainer = styled.div`
-  width: 42%;
-  height: 100vh;
-  background-color: #f3f5f7;
-  @media ${device.mobileL} {
+  width: 100%;
+  height: 40vh;
+  background-color: #777369;
+  /* background-color: #f3f5f7; */
+  @media ${device.tablet} {
     width: 50%;
+    height: 100vh;
+    background-color: #f3f5f7;
   }
 `;
 
 export const ExploreIntro = styled.div`
   width: auto;
-  height: 5rem;
+  height: 2rem;
   font-size: 0.9rem;
   padding: 1rem 0 0 1rem;
   font-style: oblique 5deg;
@@ -21,6 +24,7 @@ export const ExploreIntro = styled.div`
   }
   @media ${device.tablet} {
     font-size: 1.3rem;
+    height: 5rem;
   }
   @media ${device.laptop} {
     font-size: 1.5rem;
@@ -28,14 +32,24 @@ export const ExploreIntro = styled.div`
 `;
 
 export const OrigamiList = styled.div`
-  height: 75vh;
+  height: 30vh;
 
-  width: 80%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: flex-start; */
+  /* flex-wrap: wrap; */
+  @media ${device.mobileM} {
+    height: 35vh;
+    width: 30%;
+  }
+  @media ${device.tablet} {
+    height: 75vh;
+    width: 80%;
+    justify-content: center;
+  }
 `;
 
 export const OrigamiListItem = styled.a`
@@ -59,12 +73,10 @@ export const OrigamiListItem = styled.a`
   }
   @media ${device.tablet} {
     font-size: 1.7rem;
+    margin: 0.3rem;
     height: 3rem;
   }
-  @media ${device.tablet} {
-    font-size: 1.7rem;
-    height: 3rem;
-  }
+
   @media ${device.laptop} {
     font-size: 2rem;
     height: 3.2rem;

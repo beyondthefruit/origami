@@ -40,9 +40,12 @@ export const FlyingOrigami = styled.div`
   flex-grow: 1;
   /* without flex-grow, the svg is disapearing */
 
-  /* @media ${device.mobileM} {
-    margin-top: 2rem;
-  } */
+  @media ${device.mobileM} {
+    height: 360px;
+  }
+  @media ${device.tablet} {
+    height: auto;
+  }
 `;
 
 export const OrigamiColorSection = styled.div`
