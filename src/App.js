@@ -3,7 +3,7 @@ import GlobalStyle from './globalStyles';
 import { useState } from 'react';
 import Presentation from './components/presentation';
 import FlyingOrigami from './components/FlyingOrigami';
-import Origamis from './components/OrigamisList';
+import OrigamiListPart from './components/OrigamisList';
 import Origami from './components/Origami';
 import data from './data';
 import { device } from './devices';
@@ -35,7 +35,7 @@ function App() {
       <FlyingOrigami isMobile={isMobile} />
 
       {!isMobile && (
-        <Origamis
+        <OrigamiListPart
           paperData={paperData}
           setPaperData={setPaperData}
           filterImg={filterImg}
@@ -45,6 +45,8 @@ function App() {
         showImg={showImg}
         setShowImg={setShowImg}
         filterImg={filterImg}
+        paperData={paperData}
+        setPaperData={setPaperData}
         isMobile={isMobile}
       />
     </section>
