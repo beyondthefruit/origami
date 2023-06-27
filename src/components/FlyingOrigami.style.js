@@ -43,6 +43,9 @@ export const FlyingOrigami = styled.div`
   @media ${device.mobileM} {
     height: 360px;
   }
+  @media ${device.mobileL} {
+    height: 360px;
+  }
   @media ${device.tablet} {
     height: auto;
   }
@@ -52,8 +55,13 @@ export const OrigamiColorSection = styled.div`
   width: auto;
   height: 30vh;
 
+  @media ${device.mobileL} {
+    padding-top: 3rem;
+  }
+
   @media ${device.tablet} {
     height: 25vh;
+    padding-top: 0;
   }
 `;
 export const OrigamiColorTitle = styled.p`

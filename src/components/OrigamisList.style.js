@@ -40,12 +40,23 @@ export const OrigamiList = styled.div`
   display: flex;
   flex-direction: column;
   /* justify-content: flex-start; */
-  /* flex-wrap: wrap; */
+
   @media ${device.mobileM} {
-    height: 35vh;
-    width: 30%;
+    /* height: 35vh; */
+    /* width: 30%; */
+  }
+  @media ${device.mobileL} {
+    height: 25vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 4px;
+    grid-row-gap: 4px; */
   }
   @media ${device.tablet} {
+    display: flex;
     height: 75vh;
     width: 80%;
     justify-content: center;
@@ -63,8 +74,8 @@ export const OrigamiListItem = styled.a`
   cursor: pointer;
 
   @media ${device.mobileM} {
-    font-size: 1.5rem;
-    margin: 0.2rem;
+    /* font-size: 1.5rem;
+    margin: 0.2rem; */
   }
   @media ${device.mobileL} {
     font-size: 1.6rem;

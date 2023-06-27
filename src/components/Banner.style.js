@@ -5,15 +5,25 @@ export const BannerSection = styled.div`
   height: 20vh;
   background-color: #777369;
   color: black;
+  @media ${device.mobileM} {
+    height: 15vh;
+  }
   @media ${device.tablet} {
     height: 100vh;
   }
 `;
 export const BannerTitle = styled.div`
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 100%;
   height: 15vh;
+  @media ${device.mobileM} {
+    height: 10vh;
+  }
+  @media ${device.tablet} {
+    height: 15vh;
+    justify-content: space-between;
+  }
 `;
 
 export const Title = styled.div`
@@ -60,6 +70,10 @@ export const Intro = styled.div`
   height: 4vh;
   /* line-height: 2.2rem; */
   align-items: flex-end;
+
+  @media ${device.mobileM} {
+    height: 6vh;
+  }
   @media ${device.tablet} {
     display: flex;
     justify-content: space-between;
@@ -75,7 +89,7 @@ export const IntroTitle = styled.h1`
   font-style: oblique 3deg;
 
   @media ${device.mobileM} {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     padding-left: 0.8rem;
   }
   @media ${device.tablet} {
