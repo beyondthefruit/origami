@@ -6,6 +6,10 @@ export const OrigamisContainer = styled.div`
   height: 40vh;
   background-color: #777369;
   /* background-color: #f3f5f7; */
+  @media ${device.mobileM} {
+    height: 38vh;
+    padding-bottom: 0.3rem;
+  }
   @media ${device.tablet} {
     width: 50%;
     height: 100vh;
@@ -34,20 +38,17 @@ export const ExploreIntro = styled.div`
 export const OrigamiList = styled.div`
   height: 30vh;
 
-  width: 40%;
+  width: 45%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
   /* justify-content: flex-start; */
 
-  @media ${device.mobileM} {
-    /* height: 35vh; */
-    /* width: 30%; */
-  }
   @media ${device.mobileL} {
     height: 25vh;
-    justify-content: center;
+    width: 70%;
+    justify-content: space-between;
     flex-wrap: wrap;
     /* display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -80,7 +81,7 @@ export const OrigamiListItem = styled.a`
   @media ${device.mobileL} {
     font-size: 1.6rem;
     margin: 0.5rem;
-    padding: 0 0 0 1rem;
+    padding: 0 1rem 0 1rem;
   }
   @media ${device.tablet} {
     font-size: 1.7rem;
@@ -113,8 +114,7 @@ export const OrigamiListItem = styled.a`
       font-size: 1.6rem;
     }
     @media ${device.mobileL} {
-      padding-left: 2rem;
-      font-size: 1.7rem;
+      padding-left: 1rem;
     }
     @media ${device.tablet} {
       padding-left: 3rem;

@@ -5,24 +5,25 @@ export const BannerSection = styled.div`
   height: 20vh;
   background-color: #777369;
   color: black;
-  @media ${device.mobileM} {
+  /* @media ${device.mobileM} {
     height: 15vh;
-  }
+  } */
   @media ${device.tablet} {
     height: 100vh;
   }
 `;
 export const BannerTitle = styled.div`
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
+
   width: 100%;
   height: 15vh;
-  @media ${device.mobileM} {
-    height: 10vh;
-  }
+  /* @media ${device.mobileM} {
+    height: 13vh;
+  } */
   @media ${device.tablet} {
     height: 15vh;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 `;
 
@@ -84,13 +85,16 @@ export const Intro = styled.div`
   }
 `;
 export const IntroTitle = styled.h1`
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   padding-left: 0.6rem;
   font-style: oblique 3deg;
 
+  @media ${device.mobileS} {
+    font-size: 1.4rem;
+  }
   @media ${device.mobileM} {
     font-size: 1.7rem;
-    padding-left: 0.8rem;
+    padding: 0 0.2rem 1rem 0.8rem;
   }
   @media ${device.tablet} {
     font-size: 3rem;
