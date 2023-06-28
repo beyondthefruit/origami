@@ -5,6 +5,7 @@ import {
   OrigamiColorTitle,
   OrigamiColorBtns,
   OrigamiColorSection,
+  OrigamiAnimation,
 } from './FlyingOrigami.style';
 import OrigamiSvg from './Origamisvg';
 import colors from '../birdColor';
@@ -32,10 +33,11 @@ const FlyingOrigami = ({ isMobile }) => {
         />
       </FlyingOrigamiSection>
       <OrigamiColorSection>
+        <OrigamiAnimation id='animation' onClick={() => setOrigamiFly(3)}>
+          Fly me
+        </OrigamiAnimation>
         <OrigamiColorTitle>Choose your paper</OrigamiColorTitle>
-        <button id='go' onClick={() => setOrigamiFly(3)}>
-          Click me
-        </button>
+
         <OrigamiBtnSection>
           {colors.map((color) => {
             const { colorId, colorName, ref, stroke } = color;

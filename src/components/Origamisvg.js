@@ -13,7 +13,7 @@ const OrigamiSvg = ({ origamiColor, origamiStrokeColor, origamiFly }) => {
         xmlns='http://www.w3.org/2000/svg'
         fill={origamiColor}
         stroke={origamiStrokeColor}
-        begin='go.click'
+        begin='animation.click'
       >
         <g id='head'>
           <path d='M288 8L327 33.5L295.767 39.068L288 8Z' strokeWidth='1.5534'>
@@ -21,7 +21,7 @@ const OrigamiSvg = ({ origamiColor, origamiStrokeColor, origamiFly }) => {
               attributeName='d'
               attributeType='XML'
               repeatCount={origamiFly}
-              begin='go.click'
+              begin='animation.click'
               dur='2s'
               values='M288 8L327 33.5L295.767 39.068L288 8Z; M282.262 31.233L314 50L290.029 62.301L282.262 31.233Z;  M288 8L327 33.5L295.767 39.068L288 8Z;'
             />
@@ -37,7 +37,7 @@ const OrigamiSvg = ({ origamiColor, origamiStrokeColor, origamiFly }) => {
             <animate
               attributeName='d'
               attributeType='XML'
-              begin='go.click'
+              begin='animation.click'
               repeatCount={origamiFly}
               dur='2s'
               values='
@@ -58,7 +58,7 @@ const OrigamiSvg = ({ origamiColor, origamiStrokeColor, origamiFly }) => {
             <animate
               attributeName='d'
               attributeType='XML'
-              begin='go.click'
+              begin='animation.click'
               repeatCount={origamiFly}
               dur='2s'
               values='M287.379 7.767L225.243 38.835L108.738 233.01L209.709 225.243L302.913 62.1359L287.379 7.767Z; M281.641 31L219.505 62.068L103 256.243L203.971 248.476L297.175 85.3689L281.641 31Z; M287.379 7.767L225.243 38.835L108.738 233.01L209.709 225.243L302.913 62.1359L287.379 7.767Z;'
@@ -76,7 +76,7 @@ const OrigamiSvg = ({ origamiColor, origamiStrokeColor, origamiFly }) => {
               attributeName='d'
               attributeType='XML'
               repeatCount={origamiFly}
-              begin='go.click'
+              begin='animation.click'
               dur='2s'
               values='
              M302.913 62.1359L189 109L209.709 225.243M189 109L170.874 23.301ZM189 109L264.078 77.6699L170.874 23.301L23.301 77.6699L202.16 187.5M170.874 23.301L264.078 77.6699Z;

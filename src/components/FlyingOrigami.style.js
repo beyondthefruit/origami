@@ -64,6 +64,15 @@ export const OrigamiColorSection = styled.div`
     padding-top: 0;
   }
 `;
+
+export const OrigamiAnimation = styled.button`
+  width: 5rem;
+  height: auto;
+  float: right;
+
+  margin: 0 3rem 0.5rem;
+`;
+
 export const OrigamiColorTitle = styled.p`
   width: 100%;
   height: auto;
@@ -71,6 +80,7 @@ export const OrigamiColorTitle = styled.p`
   margin: 0.2rem 0;
   text-align: center;
   font-style: oblique;
+  clear: both;
   @media ${device.tablet} {
     width: 100%;
     height: 1.5rem;
