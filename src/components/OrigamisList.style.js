@@ -100,14 +100,18 @@ export const OrigamiListItem = styled.a`
   }
 
   &.actived {
-    background-color: #d1e9f0;
+    /* background-color: #d1e9f0; */
+    background-color: #b5bbb4;
+    /* @media ${device.tablet} {
+      background-color: #777369;
+    } */
   }
 
   &:hover {
     padding-left: 1rem;
     background-color: #b5bbb4;
     font-size: 1.4rem;
-    background-color: #86b2c1;
+    /* background-color: #86b2c1; */
 
     @media ${device.mobileM} {
       padding-left: 1.8rem;

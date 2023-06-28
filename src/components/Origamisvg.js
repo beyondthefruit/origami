@@ -1,6 +1,8 @@
 import { FlyingOrigami } from './FlyingOrigami.style';
 
-const OrigamiSvg = ({ origamiColor, origamiStrokeColor }) => {
+const OrigamiSvg = ({ origamiColor, origamiStrokeColor, origamiFly }) => {
+  console.log('this is origami fly' + origamiFly);
+  console.log('this is origami color' + origamiColor);
   return (
     <FlyingOrigami>
       <svg
@@ -11,13 +13,15 @@ const OrigamiSvg = ({ origamiColor, origamiStrokeColor }) => {
         xmlns='http://www.w3.org/2000/svg'
         fill={origamiColor}
         stroke={origamiStrokeColor}
+        begin='go.click'
       >
         <g id='head'>
           <path d='M288 8L327 33.5L295.767 39.068L288 8Z' strokeWidth='1.5534'>
             <animate
               attributeName='d'
               attributeType='XML'
-              repeatCount='5'
+              repeatCount={origamiFly}
+              begin='go.click'
               dur='2s'
               values='M288 8L327 33.5L295.767 39.068L288 8Z; M282.262 31.233L314 50L290.029 62.301L282.262 31.233Z;  M288 8L327 33.5L295.767 39.068L288 8Z;'
             />
@@ -33,7 +37,8 @@ const OrigamiSvg = ({ origamiColor, origamiStrokeColor }) => {
             <animate
               attributeName='d'
               attributeType='XML'
-              repeatCount='5'
+              begin='go.click'
+              repeatCount={origamiFly}
               dur='2s'
               values='
        M251.942 38.8334L138.445 86.6951L160.172 202.752M138.445 86.6951L119.567 1.15841ZM138.445 86.6951L213.244 54.7075L119.567 1.15841L2.5 6L152.293 165.077M119.567 1.15841L213.244 54.7075Z; 
@@ -53,7 +58,8 @@ const OrigamiSvg = ({ origamiColor, origamiStrokeColor }) => {
             <animate
               attributeName='d'
               attributeType='XML'
-              repeatCount='5'
+              begin='go.click'
+              repeatCount={origamiFly}
               dur='2s'
               values='M287.379 7.767L225.243 38.835L108.738 233.01L209.709 225.243L302.913 62.1359L287.379 7.767Z; M281.641 31L219.505 62.068L103 256.243L203.971 248.476L297.175 85.3689L281.641 31Z; M287.379 7.767L225.243 38.835L108.738 233.01L209.709 225.243L302.913 62.1359L287.379 7.767Z;'
             />
@@ -69,7 +75,8 @@ const OrigamiSvg = ({ origamiColor, origamiStrokeColor }) => {
             <animate
               attributeName='d'
               attributeType='XML'
-              repeatCount='5'
+              repeatCount={origamiFly}
+              begin='go.click'
               dur='2s'
               values='
              M302.913 62.1359L189 109L209.709 225.243M189 109L170.874 23.301ZM189 109L264.078 77.6699L170.874 23.301L23.301 77.6699L202.16 187.5M170.874 23.301L264.078 77.6699Z;
