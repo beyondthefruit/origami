@@ -31,8 +31,8 @@ const colors = [
   },
   {
     colorId: 106,
-    colorName: 'Classic',
-    ref: '#E6E8E6',
+    colorName: 'Grey',
+    ref: '#a0a6a0',
     stroke: '#0B0A0A',
   },
 ];
