@@ -5,9 +5,7 @@ export const BannerSection = styled.div`
   height: 20vh;
   background-color: #777369;
   color: black;
-  /* @media ${device.mobileM} {
-    height: 15vh;
-  } */
+
   @media ${device.tablet} {
     height: 100vh;
   }
@@ -15,15 +13,11 @@ export const BannerSection = styled.div`
 export const BannerTitle = styled.div`
   display: flex;
   justify-content: space-between;
-
   width: 100%;
   height: 15vh;
-  /* @media ${device.mobileM} {
-    height: 13vh;
-  } */
+
   @media ${device.tablet} {
     height: 15vh;
-    /* justify-content: space-between; */
   }
 `;
 
@@ -69,7 +63,6 @@ export const Intro = styled.div`
   display: flex;
   justify-content: space-between;
   height: 4vh;
-  /* line-height: 2.2rem; */
   align-items: flex-end;
 
   @media ${device.mobileM} {

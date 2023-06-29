@@ -1,6 +1,4 @@
-import origamiLogo from '../imgs/origamiLogo.png';
 import origamil from '../imgs/origamil.png';
-import devices from '../devices';
 import {
   BannerTitle,
   Intro,
@@ -16,7 +14,6 @@ const Banner = () => {
     <BannerSection>
       <BannerTitle>
         <Title>origami</Title>
-        {/* <Logo src={origamiLogo} alt='origami logo'></Logo> */}
         <Logo src={origamil} alt='origami logo'></Logo>
       </BannerTitle>
       <Intro>

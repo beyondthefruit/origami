@@ -6,7 +6,6 @@ import {
   OrigamiColorBtns,
   OrigamiColorSection,
   OrigamiAnimation,
-  OrigamiColorBtnsSpan,
   OrigamiAnimationSection,
 } from './FlyingOrigami.style';
 import OrigamiSvg from './Origamisvg';
@@ -51,32 +50,12 @@ const FlyingOrigami = ({ isMobile }) => {
                 aria-label='color'
                 key={colorId}
                 style={{
-                  // backgroundColor: ref,
                   border: `2px solid ${ref}`,
                   color: ref,
-                  // boxShadow: `50px 0 0 0 #fff`,
-                  // boxShadow: `200px 0 0 0 ${ref}`,
                 }}
                 onClick={() => updateColor(ref, stroke)}
               >
                 {colorName}
-                {/* <OrigamiColorBtnsSpan
-                  style={{
-                    backgroundColor: ref,
-                    color: stroke,
-                    // boxShadow: `50px 0 0 0 #fff`,
-                    // boxShadow: `200px 0 0 0 ${ref}`,
-                  }}
-                >
-                  {colorName}
-                </OrigamiColorBtnsSpan> */}
-                {/* <p
-                  style={{
-                    color: stroke,
-                  }}
-                >
-                  {colorName}
-                </p> */}
               </OrigamiColorBtns>
             );
           })}
