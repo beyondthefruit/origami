@@ -72,7 +72,7 @@ export const OrigamiAnimationSection = styled.div`
 export const OrigamiAnimation = styled.button`
   width: 5rem;
   height: auto;
-  /* float: right; */
+
   margin: 0 auto;
   font-size: 1rem;
   font-weight: 150;
@@ -100,25 +100,7 @@ export const OrigamiColorTitle = styled.p`
     font-size: 1.2rem;
   }
 `;
-// export const OrigamiBtnSection = styled.div`
-//   width: auto;
-//   height: auto;
-//   display: flex;
 
-//   /* flex-direction: column; */
-//   padding: 0.2rem 0.5rem 0.5rem;
-
-//   @media ${device.mobileL} {
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     justify-content: space-around;
-//   }
-//   @media ${device.tablet} {
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     justify-content: space-around;
-//   }
-// `;
 export const OrigamiBtnSection = styled.div`
   width: auto;
   height: 15vh;
@@ -149,9 +131,7 @@ export const OrigamiColorBtns = styled.button`
   height: 1.5rem;
   margin: 0.25rem auto;
   border-radius: 3px;
-  /* border: 2px solid; */
   background-color: white;
-  /* box-shadow: 1px 2px 2px 1px #7b8d8e; */
   box-shadow: inset 0px 0px 0px 0px;
   transition: 0.3s linear;
   transition: background-color 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
@@ -191,18 +171,6 @@ export const OrigamiColorBtns = styled.button`
   &:hover {
     scale: 1.05;
     letter-spacing: 1px;
-
-    /* transform: translate(100px); */
     box-shadow: inset 200px 0 0 0;
-    /* background-color: #e6e8e6; */
-    /* box-shadow: inset 200px 0 0 0 #e6e8e6; */
-    /* transform: rotate(180deg); */
   }
 `;
-// export const OrigamiColorBtnsSpan = styled.span`
-//   width: 50%;
-//   height: 100%;
-//   float: right;
-//   color: black;
-//   /* background-color: aqua; */
-// `;
