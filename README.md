@@ -1,14 +1,73 @@
-# Just testing branch on Git Hub
+# Origami React App
 
-Yes I am testing
+## 🧶 The Project
 
-# Getting Started with Create React App
+➡️ ➡️ [GO TO WEBSITE PROJECT]() ⬅️ ⬅️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I love crafting, journaling, making origamis, with this project I can combine both my passion of coding and practice my coding skills and share origamis pictures.
+This project was also a way to play with svg animation for the first time.
 
-## Available Scripts
+### 👟 Steps
 
-In the project directory, you can run:
+- Watched some SVG animations projects on Youtube
+- Created the origami on Figma from scratch
+- Built another origami to recreate the flying bird animation
+- Designed the overall design of the website using mock data
+- Fix animation issues
+- Mapped through data to display the different origami
+- Filtered image
+- Created an active categorie for the li
+- Added the change flying origami color options
+
+🍐 [@beyondthefruit (Kevin Hanard)](https://github.com/beyondthefruit)
+
+### 🎥 Overview
+
+![mockup-origami-project]()
+
+**Demo:**
+
+🚀 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+🧚🏻 Tech stack:
+
+- ReactJS
+- JavaScript
+- Styled-components
+- HTML
+- CSS
+
+## 🪄 Testing
+
+- [] Unit tests with [Testing Library](https://testing-library.com/)
+- [x] Tested manually using developer tools - Firefox / Chrome
+- [x] Media query tests: Ipad - IphoneSE/Pro/PRO MAX/MINI - Galaxy Note 20/520
+
+## 📈 Performance
+
+- For a full performance report https://www.webpagetest.org/
+- First Byte:
+- Start Render:
+- Speed Index:
+- LCP:
+- CLS:
+- TBT:
+- Total Bytes:
+
+## 📱 Media Queries
+
+- `@media screen and (min-width: 320px)`
+- `@media screen and (min-width: 400px)`
+- `@media screen and (min-width: 600px)`
+- `@media screen and (min-width: 768px)`
+- `@media screen and (min-width: 960px)`
+- `@media screen and (min-width: 1440px)`
+
+## 🌵 Challenges
+
+- First time using SVG, some SVG parameters such as Viewbox can't be used on CSS or Javascript, so to update the size of the origami, I had to use transform: scale(..) on CSS
+- SVG difficult to manipulate expecially for complex animation: Animate can't be manipulated on JS or CSS.
+- Designing the SVG on Figma
 
 ### `npm start`
 
@@ -33,44 +92,8 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## 🛸 Improvement / Next Steps
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-# origami
+- [] Create test files with [Testing Library](https://testing-library.com/)
+- []
+- []

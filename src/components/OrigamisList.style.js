@@ -2,17 +2,24 @@ import styled from 'styled-components';
 import { device } from '../devices';
 
 export const OrigamisContainer = styled.div`
-  width: 42%;
-  height: 100vh;
-  background-color: #f3f5f7;
-  @media ${device.mobileL} {
+  width: 100%;
+  height: 40vh;
+  background-color: #777369;
+
+  @media ${device.mobileM} {
+    height: 38vh;
+    padding-bottom: 0.3rem;
+  }
+  @media ${device.tablet} {
     width: 50%;
+    height: 100vh;
+    background-color: #f3f5f7;
   }
 `;
 
 export const ExploreIntro = styled.div`
   width: auto;
-  height: 5rem;
+  height: 2rem;
   font-size: 0.9rem;
   padding: 1rem 0 0 1rem;
   font-style: oblique 5deg;
@@ -21,6 +28,7 @@ export const ExploreIntro = styled.div`
   }
   @media ${device.tablet} {
     font-size: 1.3rem;
+    height: 5rem;
   }
   @media ${device.laptop} {
     font-size: 1.5rem;
@@ -28,14 +36,25 @@ export const ExploreIntro = styled.div`
 `;
 
 export const OrigamiList = styled.div`
-  height: 75vh;
-
-  width: 80%;
+  height: 30vh;
+  width: 45%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+
+  @media ${device.mobileL} {
+    height: 25vh;
+    width: 70%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  @media ${device.tablet} {
+    display: flex;
+    height: 75vh;
+    width: 80%;
+    justify-content: center;
+  }
 `;
 
 export const OrigamiListItem = styled.a`
@@ -49,22 +68,20 @@ export const OrigamiListItem = styled.a`
   cursor: pointer;
 
   @media ${device.mobileM} {
-    font-size: 1.5rem;
-    margin: 0.2rem;
+    /* font-size: 1.5rem;
+    margin: 0.2rem; */
   }
   @media ${device.mobileL} {
     font-size: 1.6rem;
     margin: 0.5rem;
-    padding: 0 0 0 1rem;
+    padding: 0 1rem 0 1rem;
   }
   @media ${device.tablet} {
     font-size: 1.7rem;
+    margin: 0.3rem;
     height: 3rem;
   }
-  @media ${device.tablet} {
-    font-size: 1.7rem;
-    height: 3rem;
-  }
+
   @media ${device.laptop} {
     font-size: 2rem;
     height: 3.2rem;
@@ -76,22 +93,20 @@ export const OrigamiListItem = styled.a`
   }
 
   &.actived {
-    background-color: #d1e9f0;
+    background-color: #b5bbb4;
   }
 
   &:hover {
     padding-left: 1rem;
     background-color: #b5bbb4;
     font-size: 1.4rem;
-    background-color: #86b2c1;
 
     @media ${device.mobileM} {
       padding-left: 1.8rem;
       font-size: 1.6rem;
     }
     @media ${device.mobileL} {
-      padding-left: 2rem;
-      font-size: 1.7rem;
+      padding-left: 1rem;
     }
     @media ${device.tablet} {
       padding-left: 3rem;

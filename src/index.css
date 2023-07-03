@@ -1,9 +1,9 @@
 #bird {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 @media screen and (min-width: 400px) {
   #bird {
-    transform: scale(1);
+    transform: scale(0.8);
   }
 }
 @media screen and (min-width: 768px) {

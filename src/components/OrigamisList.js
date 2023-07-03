@@ -4,10 +4,10 @@ import {
   OrigamiList,
   OrigamiListItem,
   OrigamisContainer,
-} from './Origamis.style';
+} from './OrigamisList.style';
 import { GiPaperCrane } from 'react-icons/gi';
 
-const Origamis = ({ filterImg, paperData }) => {
+const OrigamiListPart = ({ filterImg, paperData }) => {
   const [activeId, setActiveId] = useState(1);
 
   return (
@@ -35,4 +35,4 @@ const Origamis = ({ filterImg, paperData }) => {
   );
 };
 
-export default Origamis;
+export default OrigamiListPart;

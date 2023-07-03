@@ -1,21 +1,24 @@
 import styled from 'styled-components';
 import { device } from '../devices';
 
-export const PresentationContainer = styled.div`
-  width: 42%;
-  height: 100vh;
+export const BannerSection = styled.div`
+  height: 20vh;
   background-color: #777369;
   color: black;
-  @media ${device.mobileL} {
-    width: 50%;
+
+  @media ${device.tablet} {
+    height: 100vh;
   }
 `;
-
-export const Banner = styled.div`
+export const BannerTitle = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 15vh;
+
+  @media ${device.tablet} {
+    height: 15vh;
+  }
 `;
 
 export const Title = styled.div`
@@ -59,22 +62,32 @@ export const Logo = styled.img`
 export const Intro = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 70vh;
-  line-height: 2.2rem;
-  align-items: center;
+  height: 4vh;
+  align-items: flex-end;
+
+  @media ${device.mobileM} {
+    height: 6vh;
+  }
   @media ${device.tablet} {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+    line-height: 2.2rem;
+    align-items: center;
     line-height: 4rem;
   }
 `;
-
 export const IntroTitle = styled.h1`
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   padding-left: 0.6rem;
   font-style: oblique 3deg;
 
+  @media ${device.mobileS} {
+    font-size: 1.4rem;
+  }
   @media ${device.mobileM} {
-    font-size: 1.8rem;
-    padding-left: 0.8rem;
+    font-size: 1.7rem;
+    padding: 0 0.2rem 1rem 0.8rem;
   }
   @media ${device.tablet} {
     font-size: 3rem;
