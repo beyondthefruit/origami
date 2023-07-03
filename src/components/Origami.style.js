@@ -5,9 +5,7 @@ export const OrigamiContainer = styled.div`
   width: 108%;
   height: 100vh;
   background-color: #f3f5f7;
-
   display: flex;
-
   justify-content: center;
   flex-wrap: wrap;
   @media ${device.tablet} {

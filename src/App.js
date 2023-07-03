@@ -29,11 +29,9 @@ function App() {
   return (
     <section>
       <GlobalStyle />
-
       {!isMobile && <Presentation />}
 
       <FlyingOrigami isMobile={isMobile} />
-
       {!isMobile && (
         <OrigamiListPart
           paperData={paperData}

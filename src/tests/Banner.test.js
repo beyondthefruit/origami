@@ -1,11 +1,11 @@
 import { render } from '@testing-library/react';
-import Presentation from './presentation';
-import { IntroTitle, Logo } from './Presentation.style';
+import Banner from '../components/Banner';
+import { IntroTitle, Logo } from '../Banner.style';
 import userEvent from '@testing-library/user-event';
 
-describe('Presentation', () => {
+describe('Banner', () => {
   it('should display a logo', () => {
-    render(<Presentation />);
+    render(<Banner />);
     const { getByTestId } = render(
       <img data-testid='logo' src='orgimil'></img>
     );
@@ -13,7 +13,7 @@ describe('Presentation', () => {
   });
 
   it('should display the website title', () => {
-    render(<Presentation />);
+    render(<Banner />);
     const websiteTitle = screen.getByText(/Discover my paper creations/i);
     expect(websiteTitle).toBeInTheDocument();
   });

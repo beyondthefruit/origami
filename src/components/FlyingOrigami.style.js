@@ -14,7 +14,6 @@ export const FlyingOrigamiContainer = styled.div`
 export const FlyingOrigamiSection = styled.div`
   height: 50vh;
   display: flex;
-
   align-items: flex-end;
   justify-content: center;
 
@@ -25,7 +24,6 @@ export const FlyingOrigamiSection = styled.div`
     height: 70vh;
   }
   @media ${device.laptop} {
-    /* height: 70vh; */
     align-items: center;
   }
 `;
@@ -72,13 +70,11 @@ export const OrigamiAnimationSection = styled.div`
 export const OrigamiAnimation = styled.button`
   width: 5rem;
   height: auto;
-
   margin: 0 auto;
   font-size: 1rem;
   font-weight: 150;
   border-radius: 2px;
   box-shadow: 1px 1px 1px 1px #b5bab5;
-  /* letter-spacing: 1px; */
 `;
 
 export const OrigamiColorTitle = styled.p`
@@ -156,7 +152,6 @@ export const OrigamiColorBtns = styled.button`
     width: 8rem;
 
     margin: 0.3rem;
-    /* margin: 0 15px; */
   }
   @media ${device.laptop} {
     width: 14rem;
