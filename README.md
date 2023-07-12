@@ -57,18 +57,19 @@ This project was also a way to play with svg animation for the first time.
 
 ## 📱 Media Queries
 
-- `@media screen and (min-width: 320px)`
-- `@media screen and (min-width: 400px)`
-- `@media screen and (min-width: 600px)`
-- `@media screen and (min-width: 768px)`
-- `@media screen and (min-width: 960px)`
-- `@media screen and (min-width: 1440px)`
+- mobileS:`@media screen and (min-width: 320px)`
+- mobileM:`@media screen and (min-width: 400px)`
+- mobileL:`@media screen and (min-width: 600px)`
+- tablet: `@media screen and (min-width: 768px)`
+- laptop: `@media screen and (min-width: 960px)`
+- laptopL: `@media screen and (min-width: 1440px)`
+- desktop: `@media screen and (min-width: 2560px)`
 
 ## 🌵 Challenges
 
-- First time using SVG, some SVG parameters such as Viewbox can't be used on CSS or Javascript, so to update the size of the origami, I had to use transform: scale(..) on CSS
+- First time using SVG, some SVG parameters such as Viewbox can't be used on CSS or Javascript, for example to update the size of the origami, I had to use transform: scale(..) on CSS
 - SVG difficult to manipulate expecially for complex animation: Animate can't be manipulated on JS or CSS.
-- Designing the SVG on Figma
+- Designing the SVG on Figma: I had to draw several origamis before getting the result that I wanted.
 
 ### `npm start`
 
@@ -96,5 +97,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## 🛸 Improvement / Next Steps
 
 - [] Create test files with [Testing Library](https://testing-library.com/)
-- []
-- []
+- [] Create other design to upload
