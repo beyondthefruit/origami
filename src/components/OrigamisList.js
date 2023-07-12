@@ -31,7 +31,6 @@ const OrigamiListPart = ({ filterImg, paperData }) => {
         })}
       </OrigamiList>
     </OrigamisContainer>
-    // </BothContainer>
   );
 };
 

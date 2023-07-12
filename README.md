@@ -9,15 +9,15 @@ This project was also a way to play with svg animation for the first time.
 
 ### 👟 Steps
 
-- Watched some SVG animations projects on Youtube
+- Started by watching some SVG animations projects on Youtube
 - Created the origami on Figma from scratch
-- Built another origami to recreate the flying bird animation
-- Designed the overall design of the website using mock data
-- Fix animation issues
+- Created another origami with different wings head body position and direction to recreate the flying bird animation
+- Drafted the overall design of the website using mock data
+- Fixed animation issues
 - Mapped through data to display the different origami
-- Filtered image
-- Created an active categorie for the li
-- Added the change flying origami color options
+- Filtered images
+- Created an active categorie for the list of origamis
+- Added the function to change the flying origami color options
 
 🍐 [@beyondthefruit (Kevin Hanard)](https://github.com/beyondthefruit)
 
@@ -36,6 +36,7 @@ This project was also a way to play with svg animation for the first time.
 - Styled-components
 - HTML
 - CSS
+- SVG Animation
 
 ## 🪄 Testing
 
