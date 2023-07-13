@@ -1,20 +1,19 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Banner from '../components/Banner';
-import { IntroTitle, Logo } from '../Banner.style';
-import userEvent from '@testing-library/user-event';
 
 describe('Banner', () => {
   it('should display a logo', () => {
     render(<Banner />);
     const { getByTestId } = render(
-      <img data-testid='logo' src='orgimil'></img>
+      <img data-testid='logo' src='origamil'></img>
     );
-    expect(getByTestId('logo')).toHaveAttribute('img', 'origamil');
+
+    expect(getByTestId('logo')).toHaveAttribute('src', 'origamil');
   });
 
   it('should display the website title', () => {
     render(<Banner />);
-    const websiteTitle = screen.getByText(/Discover my paper creations/i);
+    const websiteTitle = screen.getByText(/origami/i);
     expect(websiteTitle).toBeInTheDocument();
   });
 });
