@@ -3,49 +3,43 @@ import { GiPaperCrane } from 'react-icons/gi';
 const data = [
   {
     id: 1,
-    photo:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLFEvUi1XNsRvcG_K4TkKYVWwDiKrumqNj5g&usqp=CAU',
-    name: 'Bird',
+    photo: require('./imgs/cat.JPG'),
+    name: 'Cat',
     difficulty: 1,
     icon: <GiPaperCrane />,
   },
   {
     id: 2,
-    photo:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPnAv1guZ9ul4eBt4ZMvHvGk1sc0i-9IjQRw&usqp=CAU',
-    name: 'Cat',
-    difficulty: 2,
-    icon: <GiPaperCrane />,
-  },
-  {
-    id: 3,
-    photo:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSlxYu65jBOVSli6Tn6Mku3_oZZxxTivrcIQ&usqp=CAU',
+    photo: require('./imgs/whale.JPG'),
     name: 'Whale',
     difficulty: 2,
     icon: <GiPaperCrane />,
   },
   {
+    id: 3,
+    photo: require('./imgs/elephant.JPG'),
+    name: 'Elephant',
+    difficulty: 2,
+    icon: <GiPaperCrane />,
+  },
+  {
     id: 4,
-    photo:
-      'https://content.instructables.com/F0R/47BM/IBJ769Q9/F0R47BMIBJ769Q9.jpg?auto=webp&frame=1&width=840&fit=bounds&md=e0ec7a1a7333b3915417281a62816b42',
+    photo: require('./imgs/crane.JPG'),
     name: 'Crane',
     difficulty: 2,
     icon: <GiPaperCrane />,
   },
   {
     id: 5,
-    photo:
-      'https://thepinkcraftbox.com/wp-content/uploads/2022/04/how-to-make-origami-koi-fish-5.jpg',
-    name: 'Koi',
+    photo: require('./imgs/bird.JPG'),
+    name: 'Bird',
     difficulty: 2,
     icon: <GiPaperCrane />,
   },
   {
     id: 6,
-    photo:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLFEvUi1XNsRvcG_K4TkKYVWwDiKrumqNj5g&usqp=CAU',
-    name: 'Cat',
+    photo: require('./imgs/crabe.JPG'),
+    name: 'Crab',
     difficulty: 2,
     icon: <GiPaperCrane />,
   },
