@@ -90,8 +90,9 @@ export const IntroTitle = styled.h1`
     padding: 0 0.2rem 1rem 0.8rem;
   }
   @media ${device.tablet} {
-    font-size: 3rem;
+    font-size: 2.7rem;
     padding-left: 1.5rem;
+    margin-right: 0.3rem;
   }
   @media ${device.laptop} {
     font-size: 3.4rem;

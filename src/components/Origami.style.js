@@ -24,9 +24,11 @@ export const OrigamiContainer = styled.div`
 export const OrigamiImg = styled.img`
   width: 250px;
   height: 250px;
-  border: #c1c2c2 ridge 2.5px;
+  border: #777369 solid 2px;
+
   transition: 0.6s linear;
-  box-shadow: 2px 2px 6px 2px #a2a4a4;
+  box-shadow: 0px 0px 1px 1px #a2a4a4;
+  /* box-shadow: 0px 0px 4px 2px #c1c2c2; */
 
   @media ${device.mobileM} {
     width: 240px;
@@ -37,6 +39,8 @@ export const OrigamiImg = styled.img`
     height: 250px;
   }
   @media ${device.tablet} {
+    border: #5c5a57 solid 2px;
+    box-shadow: 0px 0px 1px 1px #3b3a38;
     width: 300px;
     height: 300px;
   }

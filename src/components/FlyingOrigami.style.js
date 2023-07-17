@@ -74,7 +74,7 @@ export const OrigamiAnimation = styled.button`
   font-size: 1rem;
   font-weight: 150;
   border-radius: 2px;
-  box-shadow: 1px 1px 1px 1px #b5bab5;
+  box-shadow: 1px 1px 0px 0.1px #b5bab5;
 `;
 
 export const OrigamiColorTitle = styled.p`
@@ -154,7 +154,7 @@ export const OrigamiColorBtns = styled.button`
     margin: 0.3rem;
   }
   @media ${device.laptop} {
-    width: 14rem;
+    width: 12rem;
     height: 1.5rem;
     margin: 0.4rem 0.5rem;
   }
@@ -166,6 +166,6 @@ export const OrigamiColorBtns = styled.button`
   &:hover {
     scale: 1.05;
     letter-spacing: 1px;
-    box-shadow: inset 200px 0 0 0;
+    box-shadow: inset 300px 0 0 0;
   }
 `;
