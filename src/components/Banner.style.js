@@ -49,6 +49,7 @@ export const Logo = styled.img`
     width: 48px;
     height: 48px;
     margin: 0.8rem 1.5rem 0 0;
+    cursor: pointer;
   }
   @media ${device.laptop} {
     width: 56px;

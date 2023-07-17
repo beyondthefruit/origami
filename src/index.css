@@ -13,12 +13,12 @@
 }
 @media screen and (min-width: 960px) {
   #bird {
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
 }
 
 @media screen and (min-width: 1440px) {
   #bird {
-    transform: scale(0.9);
+    transform: scale(0.8);
   }
 }
