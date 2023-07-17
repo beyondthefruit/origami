@@ -69,13 +69,14 @@ export const OrigamiAnimationSection = styled.div`
   display: flex;
 `;
 export const OrigamiAnimation = styled.button`
-  width: 5rem;
+  width: 6rem;
   height: auto;
   margin: 0 auto;
   font-size: 1rem;
   border: #777369 solid 2px;
   border-radius: 2px;
   box-shadow: 1px 1px 0px 0.1px #b5bab5;
+  color: black;
   cursor: pointer;
   @media ${device.tablet} {
     font-size: 1.2rem;
