@@ -162,7 +162,7 @@ export const OrigamiColorBtns = styled.button`
   @media ${device.laptop} {
     width: 12rem;
     height: 1.5rem;
-    margin: 0.4rem 0.5rem;
+    margin: 0.3rem 0.5rem;
   }
   @media ${device.laptopL} {
     width: 14rem;
@@ -170,6 +170,6 @@ export const OrigamiColorBtns = styled.button`
     margin: 0.6rem;
   }
   &:hover {
-    box-shadow: inset 300px 0 0 0;
+    box-shadow: inset 300px 1px 1px 1px;
   }
 `;

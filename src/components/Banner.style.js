@@ -14,7 +14,7 @@ export const BannerTitle = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 15vh;
+  height: 10vh;
 
   @media ${device.tablet} {
     height: 15vh;
@@ -61,10 +61,10 @@ export const Logo = styled.img`
 `;
 
 export const Intro = styled.div`
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   height: 4vh;
-  align-items: flex-end;
+  /* align-items: flex-end; */
 
   @media ${device.mobileM} {
     height: 6vh;

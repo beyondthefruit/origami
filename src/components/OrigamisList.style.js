@@ -20,14 +20,12 @@ export const OrigamisContainer = styled.div`
 export const ExploreIntro = styled.div`
   width: auto;
   height: 2rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   padding: 1rem 0 0 1rem;
   font-style: oblique 5deg;
-  @media ${device.mobileM} {
-    font-size: 1rem;
-  }
+
   @media ${device.tablet} {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     height: 5rem;
   }
   @media ${device.laptop} {
@@ -38,16 +36,20 @@ export const ExploreIntro = styled.div`
 export const OrigamiList = styled.div`
   height: 30vh;
   width: 45%;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 2rem;
   display: flex;
   flex-direction: column;
-
+  @media ${device.mobileM} {
+    padding-top: 1rem;
+  }
   @media ${device.mobileL} {
     height: 25vh;
     width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 0.5rem;
   }
   @media ${device.tablet} {
     display: flex;

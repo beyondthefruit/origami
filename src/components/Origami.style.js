@@ -25,14 +25,12 @@ export const OrigamiImg = styled.img`
   width: 250px;
   height: 250px;
   border: #777369 solid 2px;
-
   transition: 0.6s linear;
   box-shadow: 0px 0px 1px 1px #a2a4a4;
-  /* box-shadow: 0px 0px 4px 2px #c1c2c2; */
 
   @media ${device.mobileM} {
-    width: 240px;
-    height: 240px;
+    width: 275px;
+    height: 275px;
   }
   @media ${device.mobileL} {
     width: 250px;
@@ -43,6 +41,9 @@ export const OrigamiImg = styled.img`
     box-shadow: 0px 0px 1px 1px #3b3a38;
     width: 300px;
     height: 300px;
+    &:hover {
+      scale: 1.15;
+    }
   }
   @media ${device.laptop} {
     width: 400px;
@@ -51,8 +52,5 @@ export const OrigamiImg = styled.img`
   @media ${device.laptopL} {
     width: 500px;
     height: 500px;
-  }
-  &:hover {
-    scale: 1.15;
   }
 `;
