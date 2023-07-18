@@ -14,8 +14,8 @@ export const BannerTitle = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 10vh;
-
+  height: 7vh;
+  padding: 0.3rem 0 0.5rem;
   @media ${device.tablet} {
     height: 15vh;
   }
@@ -61,9 +61,9 @@ export const Logo = styled.img`
 `;
 
 export const Intro = styled.div`
-  /* display: flex;
-  justify-content: space-between; */
-  height: 4vh;
+  display: flex;
+  justify-content: space-between;
+  height: 6vh;
   /* align-items: flex-end; */
 
   @media ${device.mobileM} {

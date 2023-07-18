@@ -17,9 +17,9 @@ export const FlyingOrigamiSection = styled.div`
   align-items: flex-end;
   justify-content: center;
 
-  @media ${device.mobileM} {
-    height: 55vh;
-  }
+  /* @media ${device.mobileM} {
+    height: 50vh;
+  } */
   @media ${device.tablet} {
     height: 70vh;
   }
@@ -72,7 +72,9 @@ export const OrigamiAnimation = styled.button`
   width: 6rem;
   height: auto;
   margin: 0 auto;
+  padding: 
   font-size: 1rem;
+  padding: 3px 0;
   border: #777369 solid 2px;
   border-radius: 2px;
   box-shadow: 1px 1px 0px 0.1px #b5bab5;
@@ -80,6 +82,7 @@ export const OrigamiAnimation = styled.button`
   cursor: pointer;
   @media ${device.tablet} {
     font-size: 1.2rem;
+     padding: 4px 1px;
   }
 `;
 
@@ -131,6 +134,7 @@ export const OrigamiColorBtns = styled.button`
   width: 5rem;
   height: 1.5rem;
   margin: 0.25rem auto;
+  padding: 2px 0;
   border-radius: 3px;
   background-color: white;
   box-shadow: inset 0px 0px 0px 0px;
@@ -140,7 +144,6 @@ export const OrigamiColorBtns = styled.button`
   justify-content: center;
   align-items: center;
   font-size: 1.1rem;
-  /* font-weight: 200; */
   letter-spacing: 1px;
   cursor: pointer;
 
@@ -153,10 +156,10 @@ export const OrigamiColorBtns = styled.button`
     width: 5rem;
     height: 1.5rem;
     margin: 0.4rem auto;
+    padding: 3px 1px;
   }
   @media ${device.tablet} {
     width: 8rem;
-
     margin: 0.3rem;
   }
   @media ${device.laptop} {

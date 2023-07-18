@@ -3,6 +3,11 @@
 }
 @media screen and (min-width: 400px) {
   #bird {
+    transform: scale(0.9);
+  }
+}
+@media screen and (min-width: 600px) {
+  #bird {
     transform: scale(0.8);
   }
 }

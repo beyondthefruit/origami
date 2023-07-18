@@ -24,6 +24,9 @@ export const ExploreIntro = styled.div`
   padding: 1rem 0 0 1rem;
   font-style: oblique 5deg;
 
+  @media ${device.mobileL} {
+    font-size: 1.3rem;
+  }
   @media ${device.tablet} {
     font-size: 1.4rem;
     height: 5rem;
@@ -47,7 +50,7 @@ export const OrigamiList = styled.div`
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding-top: 0.5rem;
   }
