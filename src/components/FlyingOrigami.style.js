@@ -72,7 +72,7 @@ export const OrigamiAnimation = styled.button`
   width: 6rem;
   height: auto;
   margin: 0 auto;
-  padding: 
+
   font-size: 1rem;
   padding: 3px 0;
   border: #777369 solid 2px;
@@ -82,7 +82,7 @@ export const OrigamiAnimation = styled.button`
   cursor: pointer;
   @media ${device.tablet} {
     font-size: 1.2rem;
-     padding: 4px 1px;
+    padding: 4px 1px;
   }
 `;
 
