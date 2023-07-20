@@ -46,14 +46,14 @@ This project was also a way to play with svg animation for the first time.
 
 ## 📈 Performance
 
-- For a full performance report https://www.webpagetest.org/
-- First Byte:
-- Start Render:
-- Speed Index:
-- LCP:
-- CLS:
-- TBT:
-- Total Bytes:
+- For a full performance report https://www.webpagetest.org/result/230720_BiDc6S_SC/
+- First Byte: 0.492s
+- Start Render: 1.000s
+- Speed Index: 1.002s
+- LCP: 0.995s
+- CLS: 0
+- TBT: 0.000s
+- Total Bytes: 187kb
 
 ## 📱 Media Queries
 
@@ -98,3 +98,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 - [] Create test files with [Testing Library](https://testing-library.com/)
 - [] Create other design to upload
+- [] Create a button to end animation see https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/end
