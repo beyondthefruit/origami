@@ -72,10 +72,6 @@ export const OrigamiListItem = styled.a`
   transition: padding-left 0.8s background-color 0.8s;
   cursor: pointer;
 
-  @media ${device.mobileM} {
-    /* font-size: 1.5rem;
-    margin: 0.2rem; */
-  }
   @media ${device.mobileL} {
     font-size: 1.6rem;
     margin: 0.5rem;

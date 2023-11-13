@@ -5,7 +5,6 @@ import {
   OrigamiListItem,
   OrigamisContainer,
 } from './OrigamisList.style';
-import { GiPaperCrane } from 'react-icons/gi';
 
 const OrigamiListPart = ({ filterImg, paperData }) => {
   const [activeId, setActiveId] = useState(1);

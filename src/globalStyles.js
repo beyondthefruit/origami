@@ -7,7 +7,6 @@ body {
  background: darkgray;
  font-family: 'Space Grotesk', sans-serif, 'Dancing Script', cursive, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/* 'Marck Script', cursive, 'Courgette', cursive, */
 
 section{
  display: flex;

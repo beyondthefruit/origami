@@ -6,8 +6,7 @@ import FlyingOrigami from './components/FlyingOrigami';
 import OrigamiListPart from './components/OrigamisList';
 import Origami from './components/Origami';
 import data from './data';
-import { device } from './devices';
-import { MediaQuery, useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-responsive';
 
 const image = data[0].photo;
 const images = data.map((e) => e.photo);
@@ -23,8 +22,7 @@ function App() {
     setShowImg(displayImg);
   };
 
-  console.log(device);
-  console.log(device.mobileS);
+  // console.log(device.mobileS);
 
   return (
     <section>
@@ -41,7 +39,6 @@ function App() {
       )}
       <Origami
         showImg={showImg}
-        setShowImg={setShowImg}
         filterImg={filterImg}
         paperData={paperData}
         setPaperData={setPaperData}

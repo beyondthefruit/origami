@@ -1,19 +1,18 @@
 import { FlyingOrigami } from './FlyingOrigami.style';
 
 const OrigamiSvg = ({ origamiColor, origamiStrokeColor, origamiFly }) => {
-  console.log('this is origami fly' + origamiFly);
-  console.log('this is origami color' + origamiColor);
+  // console.log('this is origami fly' + origamiFly);
+  // console.log('this is origami color' + origamiColor);
   return (
     <FlyingOrigami>
       <svg
         id='bird'
-        // width='350'
-        // height='350'
         viewBox='0 0 450 350'
         xmlns='http://www.w3.org/2000/svg'
         fill={origamiColor}
         stroke={origamiStrokeColor}
         begin='animation.click'
+        style={{ perspective: '1000px', transformStyle: 'preserve-3d' }}
       >
         <g id='head'>
           <path d='M288 8L327 33.5L295.767 39.068L288 8Z' strokeWidth='1.5534'>

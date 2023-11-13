@@ -1,13 +1,6 @@
 import { OrigamiContainer, OrigamiImg } from './Origami.style';
 import OrigamiListPart from './OrigamisList';
-const Origami = ({
-  showImg,
-  setShowImg,
-  isMobile,
-  paperData,
-  setPaperData,
-  filterImg,
-}) => {
+const Origami = ({ showImg, isMobile, paperData, setPaperData, filterImg }) => {
   return (
     <OrigamiContainer>
       {isMobile && (

@@ -2,7 +2,7 @@
 
 ## 🧶 The Project
 
-➡️ ➡️ [GO TO WEBSITE PROJECT]() ⬅️ ⬅️
+➡️ ➡️ [GO TO WEBSITE PROJECT](https://origami-kevin.netlify.app/) ⬅️ ⬅️
 
 I love crafting, journaling, making origamis, with this project I can combine both my passion of coding and practice my coding skills and share origamis pictures.
 This project was also a way to play with svg animation for the first time.
@@ -69,7 +69,14 @@ This project was also a way to play with svg animation for the first time.
 
 - First time using SVG, some SVG parameters such as Viewbox can't be used on CSS or Javascript, for example to update the size of the origami, I had to use transform: scale(..) on CSS
 - SVG difficult to manipulate expecially for complex animation: Animate can't be manipulated on JS or CSS.
+- SVG animation does not have 3d perspective
 - Designing the SVG on Figma: I had to draw several origamis before getting the result that I wanted.
+
+## 🛸 Improvement / Next Steps
+
+- [] Create test files with [Testing Library](https://testing-library.com/)
+- [] Create other design to upload
+- [] Create a button to end animation see https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/end
 
 ### `npm start`
 
@@ -93,9 +100,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## 🛸 Improvement / Next Steps
-
-- [] Create test files with [Testing Library](https://testing-library.com/)
-- [] Create other design to upload
-- [] Create a button to end animation see https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/end
